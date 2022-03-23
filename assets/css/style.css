@@ -1,0 +1,500 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:wght@400;700;900&display=swap");
+
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #161616;
+  line-height: 22px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+}
+
+.container-left {
+  display: flex;
+  align-content: center;
+  gap: 3px;
+}
+
+.container-right {
+  display: flex;
+  gap: 15px;
+  color: #5ca720;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.background {
+  width: 100vw;
+}
+
+.banner {
+  position: absolute;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #161616e5;
+  padding: 30px 25px;
+  border-bottom: 0.1px solid #a5a1a141;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #161616fb;
+  text-transform: uppercase;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 500;
+  padding: 0px 25px;
+  margin: 30px 0px;
+}
+
+.prod-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prod-img {
+  width: 126px;
+  height: 126px;
+  object-fit: cover;
+  border: none;
+  border-radius: 5px;
+}
+
+.prod-price {
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.green {
+  color: #5ca720;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 0px 30px 25px 30px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  border-top: 0.1px solid #a5a1a141;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0px;
+  font-family: "Lato", sans-serif;
+  color: #161616;
+  font-size: 14px;
+}
+
+h5 {
+  padding: 0px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #161616;
+  font-weight: 600;
+}
+
+.text-news {
+  margin: 0px;
+}
+
+input {
+  font-family: "Lato", sans-serif;
+  color: #a8a4a4;
+  font-weight: 600;
+  line-height: 19px;
+  border: 0.4px solid #d9d9d9;
+}
+
+button {
+  background-color: #5ca720;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-left {
+  display: flex;
+  gap: 8px;
+}
+
+.foot-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 25px 60px;
+  }
+
+  .container-right {
+    gap: 30px;
+  }
+
+  .cont-right-svg:hover {
+    cursor: pointer;
+  }
+
+  .background {
+    object-fit: cover;
+    width: 100vw;
+    height: 375px;
+  }
+
+  .banner {
+    height: 250px;
+  }
+
+  .promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #161616e5;
+    padding: 30px 60px;
+    border-bottom: 0.1px solid #a5a1a141;
+  }
+
+  h2 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 17px;
+    color: #161616fb;
+    text-transform: uppercase;
+  }
+
+  .quant {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+  }
+
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    font-weight: 500;
+    padding: 0px 60px;
+    margin: 70px 0px;
+  }
+
+  .prod-img {
+    width: 303px;
+    height: 303px;
+    object-fit: cover;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .prod-name {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #161616;
+  }
+
+  .prod-price {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #161616;
+  }
+
+  .green {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 24px;
+    color: #5ca720;
+  }
+
+  footer {
+    padding: 0px 60px 40px 60px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616e7;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .newsletter {
+    width: 549px;
+    margin: 35px 0px;
+    gap: 15px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #161616;
+  }
+
+  .align-desktop {
+    display: flex;
+  }
+
+  input {
+    width: 397px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #a8a4a4;
+  }
+
+  button {
+    border-left: none;
+    border-radius: 3px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .insta {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .insta:hover {
+    cursor: pointer;
+  }
+
+  .face {
+    width: 33px;
+    height: 33px;
+  }
+
+  .face:hover {
+    cursor: pointer;
+  }
+
+  .master {
+    width: 71px;
+    height: 55px;
+  }
+
+  .master:hover { 
+    cursor: pointer;
+  }
+
+  .pay {
+    width: 35px;
+    height: 42px;
+  }
+
+  .pay:hover {
+    cursor: pointer;
+  }
+
+  .visa {
+    width: 71px;
+    height: 23px ;
+  }
+
+  .visa:hover {
+    cursor: pointer;
+  }
+}
